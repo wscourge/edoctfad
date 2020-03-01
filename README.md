@@ -1,4 +1,4 @@
-# APP_NAME_RAT
+# Edoctfad
 
 Ruby on Rails application initialized with [Hix on Rails][hixonrails].
 
@@ -39,6 +39,12 @@ rails server
 
 
 ## How to run the test suite
+
+First, copy (and optionally cusotmize) the RSpec configuration file:
+
+```bash
+cp .rspec.sample .rspec
+```
 
 In order to run the whole test suite, run:
 

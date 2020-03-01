@@ -1,0 +1,13 @@
+en_us:
+  dry_validation:
+    errors:
+      key?: 'is required'
+      filled?: 'is required'
+      format?: 'is in invalid format'
+      str?: 'has to be of a string type'
+      int?: 'has to be of an integer type'
+      date?: 'is not a valid date'
+      too_early: 'cannot be later than %{min}'
+      too_late: 'cannot be earlier than %{max}'
+      min_size?: 'is too short'
+      max_size?: 'is too long'
