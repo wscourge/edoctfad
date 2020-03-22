@@ -15,13 +15,16 @@ Dotenv::Railtie.load
 module Daftcode
   class Application < Rails::Application
     config.api_only = true
-    config.load_defaults 6.0
+    config.load_defaults(6.0)
     config.generators do |generator|
-      generator.test_framework :rspec, fixtures: true,
-                                       controller_specs: true,
-                                       routing_specs: true,
-                                       request_specs: true
-      generator.fixture_replacement :factory_bot, dir: 'spec/factories'
+      generator.test_framework(
+        :rspec,
+        fixtures: true,
+        controller_specs: true,
+        routing_specs: true,
+        request_specs: true
+      )
+      generator.fixture_replacement(:factory_bot, dir: 'spec/factories')
     end
   end
 end
